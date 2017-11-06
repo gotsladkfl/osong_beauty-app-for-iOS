@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="190" id="BtM-Fa-0ax" userLabel="Elongation Cell" customClass="TravelElogationCell" customModule="Example" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BtM-Fa-0ax" id="KMN-Ll-OaR">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="189.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vJ3-am-vS0">
+                        <rect key="frame" x="0.0" y="20" width="375" height="170"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9be-Lg-av4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="9be-Lg-av4" secondAttribute="bottom" constant="1" id="Peb-RL-2BZ"/>
+                            <constraint firstItem="9be-Lg-av4" firstAttribute="leading" secondItem="vJ3-am-vS0" secondAttribute="leading" id="YAv-h1-CeZ"/>
+                            <constraint firstItem="9be-Lg-av4" firstAttribute="top" secondItem="vJ3-am-vS0" secondAttribute="top" id="ZhT-Qs-jbT"/>
+                            <constraint firstAttribute="height" constant="170" id="aNr-cl-iUk"/>
+                            <constraint firstAttribute="trailing" secondItem="9be-Lg-av4" secondAttribute="trailing" id="dM5-3U-SWc"/>
+                        </constraints>
+                    </view>
+                    <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JY0-TE-z5f" userLabel="TopView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="MR9-ht-cHw" userLabel="ScalableView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YPL-CH-g8B">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
+                                        <color key="backgroundColor" red="0.52865175289999999" green="0.90654074630000003" blue="0.95629221200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nMw-fE-aLI" userLabel="Image Overlay">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nMw-fE-aLI" secondAttribute="trailing" id="7Z1-ar-QA7"/>
+                                    <constraint firstItem="nMw-fE-aLI" firstAttribute="leading" secondItem="MR9-ht-cHw" secondAttribute="leading" id="ZJL-A3-wKm"/>
+                                    <constraint firstItem="YPL-CH-g8B" firstAttribute="leading" secondItem="nMw-fE-aLI" secondAttribute="leading" id="ZUI-Da-JaB"/>
+                                    <constraint firstItem="YPL-CH-g8B" firstAttribute="bottom" secondItem="nMw-fE-aLI" secondAttribute="bottom" id="gE9-s4-S0s"/>
+                                    <constraint firstAttribute="bottom" secondItem="nMw-fE-aLI" secondAttribute="bottom" id="rmR-jL-Q69"/>
+                                    <constraint firstItem="YPL-CH-g8B" firstAttribute="trailing" secondItem="nMw-fE-aLI" secondAttribute="trailing" id="rms-dW-Exq"/>
+                                    <constraint firstItem="nMw-fE-aLI" firstAttribute="top" secondItem="MR9-ht-cHw" secondAttribute="top" id="tAH-hH-4V5"/>
+                                    <constraint firstItem="YPL-CH-g8B" firstAttribute="top" secondItem="nMw-fE-aLI" secondAttribute="top" id="tgl-QX-Ynf"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jzt-4f-4wb">
+                                <rect key="frame" x="132.5" y="69.5" width="110.5" height="53"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOCALITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VU-jC-eP9">
+                                        <rect key="frame" x="0.0" y="0.0" width="110.5" height="28.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uch-Fm-NaF">
+                                        <rect key="frame" x="31" y="36.5" width="49" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MR9-ht-cHw" firstAttribute="left" secondItem="JY0-TE-z5f" secondAttribute="left" id="Es0-1T-Jqb"/>
+                            <constraint firstItem="MR9-ht-cHw" firstAttribute="top" secondItem="JY0-TE-z5f" secondAttribute="top" id="Q1k-f6-kGn"/>
+                            <constraint firstAttribute="right" secondItem="MR9-ht-cHw" secondAttribute="right" id="WDe-CK-wMu"/>
+                            <constraint firstItem="jzt-4f-4wb" firstAttribute="centerY" secondItem="JY0-TE-z5f" secondAttribute="centerY" id="alI-t2-pD7"/>
+                            <constraint firstAttribute="height" constant="190" id="fta-zq-iBN"/>
+                            <constraint firstItem="jzt-4f-4wb" firstAttribute="centerX" secondItem="JY0-TE-z5f" secondAttribute="centerX" id="pQF-1K-E8G"/>
+                            <constraint firstAttribute="bottom" secondItem="MR9-ht-cHw" secondAttribute="bottom" id="taN-fm-Yyf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="right" secondItem="JY0-TE-z5f" secondAttribute="right" id="1Tf-yf-3ol"/>
+                    <constraint firstItem="vJ3-am-vS0" firstAttribute="left" secondItem="KMN-Ll-OaR" secondAttribute="left" id="2h1-9O-pmJ"/>
+                    <constraint firstItem="JY0-TE-z5f" firstAttribute="left" secondItem="KMN-Ll-OaR" secondAttribute="left" id="Efl-B8-pa9"/>
+                    <constraint firstItem="vJ3-am-vS0" firstAttribute="top" secondItem="KMN-Ll-OaR" secondAttribute="top" priority="999" constant="20" id="UJe-bQ-HzC"/>
+                    <constraint firstItem="JY0-TE-z5f" firstAttribute="top" secondItem="KMN-Ll-OaR" secondAttribute="top" id="wJK-DH-vyr"/>
+                    <constraint firstAttribute="right" secondItem="vJ3-am-vS0" secondAttribute="right" id="xv3-Yn-rH1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="bottomView" destination="vJ3-am-vS0" id="DAd-9k-0aA"/>
+                <outlet property="bottomViewHeightConstraint" destination="aNr-cl-iUk" id="zLN-IY-h8w"/>
+                <outlet property="bottomViewTopConstraint" destination="UJe-bQ-HzC" id="5U9-A3-Pv6"/>
+                <outlet property="countryLabel" destination="Uch-Fm-NaF" id="LAO-aI-qEE"/>
+                <outlet property="hotelImage" destination="9be-Lg-av4" id="hop-7z-SFk"/>
+                <outlet property="localityLabel" destination="5VU-jC-eP9" id="Wr4-eN-OVa"/>
+                <outlet property="scalableView" destination="MR9-ht-cHw" id="jmT-wg-8cC"/>
+                <outlet property="topImageView" destination="YPL-CH-g8B" id="p6G-mL-Le4"/>
+                <outlet property="topView" destination="JY0-TE-z5f" id="Sbw-Jd-3P2"/>
+                <outlet property="topViewHeightConstraint" destination="fta-zq-iBN" id="fKX-2i-aP1"/>
+                <outlet property="topViewTopConstraint" destination="wJK-DH-vyr" id="peX-jM-KVt"/>
+            </connections>
+            <point key="canvasLocation" x="92.5" y="41"/>
+        </tableViewCell>
+    </objects>
+</document>
